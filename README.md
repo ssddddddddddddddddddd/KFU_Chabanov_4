@@ -366,7 +366,7 @@ void print(double a, int b);
 void print(float a);
 ```
 
-30) !!!!!!!Дана функция на языке С++. Выберите всё варианты, которые являются допустимым объявлением этой функции:
+30) Дана функция на языке С++. Выберите всё варианты, которые являются допустимым объявлением этой функции:
 ```cpp
 void print(int x, int y){
     std::cout << "x: " << x << '\n';
@@ -374,4 +374,41 @@ void print(int x, int y){
 }
 ```
 Ответ:
+```cpp
+void print(int, int);
+```
+```cpp
+void print(int, int=10);
+```
+```cpp
+void print(int x, int y);
+```
+```cpp
+void print(int x=10, int y=10);
+```
+```cpp
+void print(int x, int y=5);
+```
+```cpp
+void print(int x, int y=10);
+```
 
+31) Язык С++. Что из перечисленного может быть использовано в качестве объявления деструктора для класса <code>SomeClass</code>?<br>
+
+Ответ:<code>~SomeClass(){}</code><br>
+<code>~SomeClass() = default;</code>
+
+32) Дан фрагмент кода на С++. Что отобразится на экране после его выполнения?
+```cpp
+template<typename T>
+T sum(T a, T b){
+    auto res = a + b;
+    return res;
+}
+
+int main()
+{
+    std::cout << sum(3.0, 0.1415);
+}
+```
+Ответ: <code> 3.1415 </code>
