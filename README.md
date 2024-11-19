@@ -29,8 +29,13 @@ T foo(T a, T b){
 ```
 Ответ: <code> foo<int>(3.0, 0.1415); </code><br>
 <code> foo(3, 0); </code><br>
-<code> foo<double>(3, 0.1415); </code><br>
-<code> foo(3.0, 0.1415); </code>
+```cpp
+foo<double>(3, 0.1415);
+```
+```cpp
+foo<int>(3.0, 0.1415);
+```
+
 
 3) Язык С++. Какой модификатор доступа у <code>some_field</code>?
 ```cpp
